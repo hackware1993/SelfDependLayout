@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="net.lucode.hackware.demo.selfdependlayout.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <net.lucode.hackware.selfdependlayout.SelfDependLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:dependWidth="true"
+            app:dependencyRatio="1.0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f00"
+                android:gravity="center"
+                android:text="1 x 1"
+                android:textColor="#ffffff"
+                android:textSize="24dp" />
+
+        </net.lucode.hackware.selfdependlayout.SelfDependLayout>
+
+        <net.lucode.hackware.selfdependlayout.SelfDependLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            app:dependWidth="true"
+            app:dependencyRatio="1.0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f00"
+                android:gravity="center"
+                android:text="1 x 1"
+                android:textColor="#ffffff"
+                android:textSize="24dp" />
+
+        </net.lucode.hackware.selfdependlayout.SelfDependLayout>
+
+        <net.lucode.hackware.selfdependlayout.SelfDependLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            app:dependWidth="true"
+            app:dependencyRatio="1.0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f00"
+                android:gravity="center"
+                android:text="1 x 1"
+                android:textColor="#ffffff"
+                android:textSize="24dp" />
+
+        </net.lucode.hackware.selfdependlayout.SelfDependLayout>
+
+    </LinearLayout>
+
+    <net.lucode.hackware.selfdependlayout.SelfDependLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:dependWidth="false"
+        app:dependencyRatio="1.78">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="16 x 9"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+    </net.lucode.hackware.selfdependlayout.SelfDependLayout>
+
+    <net.lucode.hackware.selfdependlayout.SelfDependLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:dependWidth="true"
+        app:dependencyRatio="1.5">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="2 x 3"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+    </net.lucode.hackware.selfdependlayout.SelfDependLayout>
+
+</LinearLayout>
