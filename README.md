@@ -32,7 +32,7 @@ dependencies {
 
     <net.lucode.hackware.selfdependlayout.SelfDependLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"    // what ever you set, ignored
+        android:layout_height="wrap_content"    // ignore what ever you set
         android:layout_marginTop="45dp"
         app:dependWidth="true"
         app:dependencyRatio="1.5">  // layout_height = layout_width * 1.5
