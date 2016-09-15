@@ -31,24 +31,30 @@ dependencies {
     tools:context="net.lucode.hackware.demo.selfdependlayout.MainActivity">
 
     <net.lucode.hackware.selfdependlayout.SelfDependLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"    // ignore what ever you set
-        android:layout_marginTop="45dp"
-        app:dependWidth="true"
-        app:dependencyRatio="1.5">  // layout_height = layout_width * 1.5
+        android:layout_width="wrap_content" // ignore what ever you set
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:dependWidth="false" // layout_width depend on layout_height
+        app:dependencyRatio="0.25"> // layout_width = layout_height / 4
 
         <TextView
-            android:layout_width="120dp"
+            android:layout_width="match_parent" // must be "match_parent"
             android:layout_height="match_parent"    // must be "match_parent"
             android:background="#f00"
             android:gravity="center"
-            android:text="2 x 3"
+            android:text="1 x 4"
             android:textColor="#ffffff"
             android:textSize="24dp" />
 
     </net.lucode.hackware.selfdependlayout.SelfDependLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#0f0" />
+
 </LinearLayout>
+
 ```
 
 # License
