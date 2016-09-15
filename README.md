@@ -54,7 +54,6 @@ dependencies {
         android:background="#0f0" />
 
 </LinearLayout>
-
 ```
 
 # License
