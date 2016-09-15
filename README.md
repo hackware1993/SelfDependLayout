@@ -1,5 +1,5 @@
 # SelfDependLayout
-a custom ViewGroup to simplize layout by ratio.
+A custom ViewGroup to simplize layout by ratio.
 
 ![demo.png](./demo.png)
 
