@@ -32,14 +32,14 @@ dependencies {
 
     <net.lucode.hackware.selfdependlayout.SelfDependLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content"    // what ever you set, ignored
         android:layout_marginTop="45dp"
         app:dependWidth="true"
-        app:dependencyRatio="1.5">
+        app:dependencyRatio="1.5">  // layout_height = layout_width * 1.5
 
         <TextView
             android:layout_width="120dp"
-            android:layout_height="match_parent"
+            android:layout_height="match_parent"    // must be "match_parent"
             android:background="#f00"
             android:gravity="center"
             android:text="2 x 3"
